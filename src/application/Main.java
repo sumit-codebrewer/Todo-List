@@ -1,5 +1,8 @@
 package application;
 	
+import java.io.IOException;
+
+import datamodel.TodoData;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -25,5 +28,24 @@ public class Main extends Application {
 	
 	public static void main(String[] args) {
 		launch(args);
+	}
+
+	@Override
+	public void stop() throws Exception {
+		try {
+			TodoData.getInstance().storeTodoItems();
+		}
+		catch(IOException e) {
+			System.out.println(e.getMessage());
+		}
+	}
+	@Override
+	public void init() throws Exception {
+		try {
+			TodoData.getInstance().loadTodoItems();
+		}
+		catch(Exception e) {
+			System.out.println(e.getMessage());
+		}
 	}
 }

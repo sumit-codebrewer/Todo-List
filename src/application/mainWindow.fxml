@@ -7,8 +7,23 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.text.Font?>
-	
-<BorderPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SampleController">
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+
+<BorderPane fx:id="mainBorderPane" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SampleController">
+	<top>
+		<MenuBar>
+			<Menu text="File">
+				<items>
+					<MenuItem text="New"/>
+					<SeparatorMenuItem/>
+					<MenuItem text="Exit"/>
+				</items>
+			</Menu>
+		</MenuBar>
+	</top>
 	<left>
 		<ListView fx:id="todoListView">
 		</ListView>
