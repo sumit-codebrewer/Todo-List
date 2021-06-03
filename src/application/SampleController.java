@@ -205,6 +205,7 @@ public class SampleController {
 		if (result.isPresent() && result.get() == ButtonType.OK) {
 			TodoItem newItem = controller.processResults();
 			todoListView.getSelectionModel().select(newItem);
+			TodoData.getInstance().deleteTodoItem(todoListView.getSelectionModel().getSelectedItem());
 		}
 	}
 

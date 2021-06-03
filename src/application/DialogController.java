@@ -21,16 +21,17 @@ public class DialogController {
 		String description = shortDescriptionField.getText().trim();
 		String details = detailsArea.getText().trim();
 		LocalDate deadlineValue = deadlinePicker.getValue();
+		
+		//Setting default values to avoid Null Pointer Exception
 
 		TodoItem newItem = new TodoItem(description, details, deadlineValue);
 		TodoData.getInstance().addTodoItem(newItem);
 		return newItem;
 	}
-	
+
 	public void editResults(TodoItem item) {
 		shortDescriptionField.setText(item.getShortDescription());
 		detailsArea.setText(item.getDetails());
 		deadlinePicker.setValue(item.getDeadline());
-		TodoData.getInstance().deleteTodoItem(item);
 	}
 }
