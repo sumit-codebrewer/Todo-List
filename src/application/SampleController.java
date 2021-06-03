@@ -1,8 +1,8 @@
 package application;
 
-import java.io.IOException;
 import java.time.format.DateTimeFormatter;
 import java.util.List;
+import java.util.Optional;
 
 import datamodel.TodoData;
 import datamodel.TodoItem;
@@ -78,10 +78,22 @@ public class SampleController {
 			Parent root=FXMLLoader.load(getClass().getResource("TodoItemDialog.fxml"));
 			dialog.getDialogPane().setContent(root); 
 		}
-		catch(IOException e) {
+		catch(Exception e) {
 			System.out.println("Could not load the dialog");
 			e.printStackTrace();
 		}
+		
+		dialog.getDialogPane().getButtonTypes().add(ButtonType.OK);
+		dialog.getDialogPane().getButtonTypes().add(ButtonType.CANCEL);
+		
+		Optional<ButtonType> result=dialog.showAndWait();
+		if(result.isPresent()&&result.get()==ButtonType.OK) {
+			System.out.println("OK Pressed");
+		}
+		else {
+			System.out.println("Cancel Pressed");
+		}
+		
 	}
 	
 	@FXML
