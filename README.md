@@ -23,15 +23,15 @@ Thats it.
 #### Main Window
 <img src="Screenshots/Main.png"><br><br>
 #### Add Todo Item Window
-<img src="Screenshots/Add.png"><br><br>
+<img src="Screenshots/Add.PNG"><br><br>
 #### Edit Todo Item Window
-<img src="Screenshots/Edit.png"><br><br>
+<img src="Screenshots/Edit.PNG"><br><br>
 #### Context Menu
 <img src="Screenshots/ContextMenu.png"><br><br>
 #### Menu Bar
-<img src="Screenshots/MenuBar1.png"><br><br>
-<img src="Screenshots/MenuBar2.png"><br><br>
-do
+<img src="Screenshots/MenuBar1.PNG"><br><br>
+<img src="Screenshots/MenuBar2.PNG"><br><br>
+ 
 #### Today's Todo Item
-<img src="Screenshots/TodaysItem.png">
+<img src="Screenshots/TodaysItem.PNG">
 </p>
