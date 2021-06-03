@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.DialogPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.DatePicker?>
+
+<DialogPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.DialogController">
+	<headerText>
+		We would put instructions here
+	</headerText>
+	<content>
+		<GridPane hgap="10" vgap="10">
+			<Label text="Short Description" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+			<TextFieldn fx:id="shortDescription" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+			<Label text="Details" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+			<TextArea fx:id="detailsArea" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+			<Label text="Deadline" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+			<DatePicker fx:id="deadlinePicker" GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+		</GridPane>
+	</content>
+</DialogPane>
+
