@@ -1,4 +1,5 @@
 <img src="https://github.com/CryptoSingh1337/todo-list/blob/master/src/com/saransh/todolist/icon/icon.png" height="250" width="250" alt="Logo">
+
 # Todo-List
 This is a Java application created using Java-FX 11.
 
@@ -6,7 +7,7 @@ This is a Java application created using Java-FX 11.
 1. User can add new Todo Item, edit and delete the Todo Item.
 2. Display Todo Items on the basis of Deadlines.
 3. Display the color of the Text according to the deadline.
-4. Able to save all the item at the time of exit and reinititalize TodoList at the time of launching.
+4. Able to save all the item at the time of exit and reinitalize TodoList at the time of launching.
 5. It can be run on windows, linux and macOS as well.
 
 ### Requirements:
