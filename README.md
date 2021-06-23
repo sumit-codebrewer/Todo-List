@@ -11,7 +11,7 @@ This is a Java application created using Java-FX 11.
 5. It can be run on windows, linux and macOS as well.
 
 ### Requirements:
- JDK -11 or above.
+ JDK -11 or above
 
 ### Installation:
 1. Install JDK.
