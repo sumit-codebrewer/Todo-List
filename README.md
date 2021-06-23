@@ -31,7 +31,7 @@ Thats it.
 <img src="Screenshots/ContextMenu.png"><br><br>
 #### Menu Bar
 <img src="Screenshots/MenuBar1.PNG"><br><br>
-<img src="Screenshots/MenuBar2.PNG"><br><br>
+<img src="Screenshots/MenuBar2.PNG"><br>
  
 #### Today's Todo Item
 <img src="Screenshots/TodaysItem.PNG">
