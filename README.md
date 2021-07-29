@@ -1,6 +1,5 @@
 <img src="https://github.com/CryptoSingh1337/todo-list/blob/master/src/com/saransh/todolist/icon/icon.png" height="250" width="250" alt="Logo">
 
-
 # Todo-List
 This is a Java application created using Java-FX 11.
 
